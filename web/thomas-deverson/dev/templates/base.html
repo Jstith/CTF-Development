@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/bootstrap4-executive-suite.min.css') }}">
+  </head>
+  <body>
+
+  <div class="bg-dark navbar-dark text-white">
+    <div class="container">
+      <nav class="navbar px-0 navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="{{ url_for('index') }}" class="pl-md-0 p-3 text-white">Start</a>
+            <a href="{{ url_for('messages') }}" class="pl-md-0 p-3 text-white">Messages</a>
+            <a href="{{ url_for('status') }}" class="pl-md-0 p-3 text-white">Status</a>
+            <!-- <a href="{{ url_for('backup') }}" class="pl-md-0 p-3 text-white">Backup</a> !-->
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+
+  <div class="container py-5">
+    <strong>Page sourced from:</strong><br>
+    <a href="https://github.com/HackerThemes/theme-machine">https://github.com/HackerThemes/theme-machine</a>
+
+</div>
+  </body>
+</html>

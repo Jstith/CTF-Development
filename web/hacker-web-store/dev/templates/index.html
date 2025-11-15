@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1 clas="title">{% block title %} Products {% endblock %}</h1>
+	<div class="desc">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <p>{{message}}</p>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+	<div class="content">
+		{% for product in products %}
+			<div class="product">
+				<p><b>#{{ product.id }}</b></p>
+				<b>
+					<p class="name">{{ product.name }}</p>
+				</b>
+				<p>${{ product.price }}</p>
+				<div class="desc">
+					<p>{{ product.desc }}</p>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

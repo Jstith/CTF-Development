@@ -1,0 +1,1 @@
+I created a python scrip that checks for a correct password. Can you reverse engineer it?

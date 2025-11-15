@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron py-0 bg-light text-dark mb-0 radius-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 mr-auto d-none d-xl-block">
+        <div class="executive-image">
+          <img src="{{ url_for('static', filename='images/executive-image.jpg') }}"
+               width="445"
+               alt="Rockefeller Building">
+
+        </div>
+      </div>
+      <div class="col-xl-6 ml-auto jumbo-vertical-center">
+        <div>
+          <form action="/login" method="post">
+          <div class="input-group mb-3">
+            <h1>Thomas Jefferson's Democratic Republican Login Portal</h1>
+            <p>It's 1797! Let's use modern technology to protect our hidden plans from those sketchy Federalists. Enter your name, and you'll be granted access using state of the art 19th century authentication.</p>
+            <input name="user_input" type="text" class="form-control" placeholder="Username" aria-label="Username"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit">Go!</button>
+            </div>
+          </div>
+        </form>
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            {% for message in messages %}
+              <p>{{ message }}</p>
+            {% endfor %}   
+          {% endif %}
+        {% endwith %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

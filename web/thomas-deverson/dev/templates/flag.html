@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Congratulations
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron py-0 bg-light text-dark mb-0 radius-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 mr-auto d-none d-xl-block">
+        <div class="executive-image">
+          <img src="{{ url_for('static', filename='images/executive-image.jpg') }}"
+               width="445"
+               alt="Rockefeller Building">
+
+        </div>
+      </div>
+      <div class="col-xl-6 ml-auto jumbo-vertical-center">
+        <div>
+            <h1>Welcome fellow Democratic Republican!</h1>
+            <p>Don't tell Hamilton, but we totally know what he did.</p>
+            <strong>flag{f69f2c087b291b9da9c9fe9219ee130f}</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
