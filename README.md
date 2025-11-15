@@ -6,7 +6,7 @@ This repository contains materials and writeups for CTF challenges I've created 
 
 ## Organization
 
-The challenges are organized by category and difficulty. Each challenge is marked with the CTF it was used in and its intended difficult.
+The challenges are organized into the following categories:
 - Web
 - Cryptography
 - Forensics
@@ -15,6 +15,8 @@ The challenges are organized by category and difficulty. Each challenge is marke
 - Misc
 
 ## All challenges
+
+This is a list of all challenges in this repository, including their intended difficulty, which CTF they were in, and additional authors for collaborative challenges.
 
 | Challenge Name | Category | Intended Difficulty | Featured In | Authors |
 | -------------- | -------- | ------------------- | ----------- | ------- |
