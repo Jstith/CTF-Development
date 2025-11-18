@@ -1,0 +1,10 @@
+NOTE: This is an OSINT challenge, so it was made based on information relevant at the time of the challenge (May 2025).
+
+Turns out the Houthi PC Small Group was only the tip of the iceberg...
+
+United States Official Mike Waltz made global headlines in March when he accidentally added an editor of The Atlantic to a private Signal group chat with several high-ranking U.S. officials discussing military plans in Yemen (href="https://www.theatlantic.com/politics/archive/2025/03/trump-administration-accidentally-texted-me-its-war-plans/682151/). Recently, he made headlines again as a picture of his phone revealed him using a mock-version of the Signal messaging app with glaring cybersecurity vulnerabilities.
+
+Fill in all three answers below:
+1. Find the hard-coded credential in the application used to encrypt log files.
+2. Find the email address of the developer who added the hard-coded credential from question one to the code base
+3. Find the first published version of the application that contained the hard-coded credential from question one
